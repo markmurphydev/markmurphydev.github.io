@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Mark Murphy"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Mark Murphy"
 description              : &description "personal description"
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,10 +21,10 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : # "profile.png"
   name             : # "Mark Murphy"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "" # "Short biography for the left-hand sidebar"
   location         : "Potsdam, NY"
   employer         : "SUNY Potsdam"
   uri              : # URL
@@ -200,16 +200,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -221,10 +221,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
+      author_profile: false
+      read_time: false
+      comments: false
+      share: false
       related: true
   # _pages
   - scope:
@@ -232,7 +232,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _teaching
   - scope:
       path: ""
